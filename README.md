@@ -1,5 +1,5 @@
 # ReactJS Challenge | GoStack
- Esse desafio tem por objetivo
+ Esse desafio tem por objetivo revisar os conceitos básicos do ReactJS e conectar um projeto React com uma API node.
 <h2 align="center">to.do</h2>
 
 ___
@@ -22,7 +22,7 @@ ___
 
 ## :information_source: Sobre
 
-O projeto **to.do** é o 1º desafio técnico do bootcamp Ignite da Rocketseat em que treinamos o conceito e a prática do uso de Estado no Reactjs.
+Esse desafio tem o intuíto de revisar os conceitos de Estado e Imutabilidade do ReactJS além de conectar essa aplicação básica ReactJS com a API Node criada no desafio de NodeJS  e que por fim, consigamos adicionar e remover elementos, nesse caso repositórios, do back-end pelo front-end revisando estruturas básicas de funções que realizam essas requisições de adicionar elementos e remover elementos.
 
 * Página Inicial:
  
@@ -31,12 +31,12 @@ O projeto **to.do** é o 1º desafio técnico do bootcamp Ignite da Rocketseat e
 
 * Versão Mobile:
  
-  <img src="https://i.imgur.com/yvQ2ayQ.png" width="300">___________<img src="https://i.imgur.com/O9ZtXvB.png" width="300">
+  <img src="" width="300">___________<img src="" width="300">
   
 ___
 ## :interrobang: Motivo
 
-Esse projeto tem por objetivo por em prática os conceitos iniciais ensinados no curso **Ignite** de **Reactjs**. 
+Esse projeto tem por objetivo por em prática os conceitos iniciais sobre Estado, Imutabilidade, conexão de uma API Rest com um projeto ReactJS, adição e remoção de elementos via fron-end do ReactJS.
 
 Pretendo adicionar algumas funcionalidades no futuro como:
 1. Modo Noturno. 
@@ -54,7 +54,7 @@ ___
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-- [Typescript](https://www.typescriptlang.org/)
+- [NodeJS](https://nodejs.org/en/)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [React](https://pt-br.reactjs.org/)
