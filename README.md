@@ -38,12 +38,6 @@ ___
 
 Esse projeto tem por objetivo por em prática os conceitos iniciais sobre Estado, Imutabilidade, conexão de uma API Rest com um projeto ReactJS, adição e remoção de elementos via fron-end do ReactJS.
 
-Pretendo adicionar algumas funcionalidades no futuro como:
-1. Modo Noturno. 
-2. Pesquisa das tarefas.
-3. Edição dos nomes das tarefas.
-4. Paginação caso se tenha muitas tarefas adicionadas.
-
 ___
 ## :seedling: Requisitos Mínimos
 
