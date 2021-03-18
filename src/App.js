@@ -17,7 +17,7 @@ function App() {
 
   async function handleAddRepository() {
     const response = await api.post('repositories', { 
-      title: 'LaunchBase',
+      title: 'ignite - ReactJS',
       url: 'https://github.com/Aszurar/nodejsChallenge',
       techs: [
         'Nodejs',

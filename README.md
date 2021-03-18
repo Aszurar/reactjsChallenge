@@ -1,6 +1,6 @@
 # ReactJS Challenge | GoStack
  Esse desafio tem por objetivo revisar os conceitos básicos do ReactJS e conectar um projeto React com uma API node.
-<h2 align="center">to.do</h2>
+<h2 align="center">ReactJS Challenge</h2>
 
 ___
 
@@ -29,41 +29,41 @@ Esse desafio tem o intuíto de revisar os conceitos de Estado e Imutabilidade do
   <img src="https://i.imgur.com/P66DOns.png" width="500"> 
 
 * Estado e Imutabilidade
-```js
-   const [ repositories, setRepositories ] = useState([]);
+  ```js
+    const [ repositories, setRepositories ] = useState([]);
 
-   useEffect(() => {
-     //lsitando e atualizando os repositórios
-     api.get('repositories').then(response => {
-       setRepositories(response.data)
-       //preenchendo o array repositories com os nossos dados do back-end
-     });
-   }, []);
-```
+    useEffect(() => {
+      //lsitando e atualizando os repositórios
+      api.get('repositories').then(response => {
+        setRepositories(response.data)
+        //preenchendo o array repositories com os nossos dados do back-end
+      });
+    }, []);
+  ```
   - Aqui temos a definição da variável Estado repositórios que é uma lista de objetos em que cada objeto seria um repositório e também definimos a função que atualiza essa variável Estado que é a setRepositories.
    - Relembrando que a função useState retorna 2 ítens, o 1º é a variável Estado e o 2º é a função que a atualiza.
   - Também temos o uso do useEffect que é uma função que tem por objetivo executar determinada função quando algo acontecer, nesse caso, o useEffect executa a função de atualização da variável Estado com os dados do back-end assim que a página é carregada.
    - Relembreando que no ReactJS não mostramos direto os dados do back-end na tela, primeiro nós atualizamos nossa variável Estado com os dados do back-end e com essa variável Estado nós mostramos os dados no front-end.
 
- * Requisição de Adição de Recursos/repositórios
+* Requisição de Adição de Recursos/repositórios
   ```js
-     async function handleAddRepository() {
-      const response = await api.post('repositories', { 
-        title: 'ignite - ReactJS',
-        url: 'https://github.com/Aszurar/nodejsChallenge',
-        techs: [
-          'Nodejs',
-          'html',
-          'css',
-          'Reacjs'
-        ],
-      });
+      async function handleAddRepository() {
+        const response = await api.post('repositories', { 
+          title: 'ignite - ReactJS',
+          url: 'https://github.com/Aszurar/nodejsChallenge',
+          techs: [
+            'Nodejs',
+            'html',
+            'css',
+            'Reacjs'
+          ],
+        });
 
-      const repository = response.data
+        const repository = response.data
 
-      setRepositories([...repositories, repository]);
-    }
-  ```
+        setRepositories([...repositories, repository]);
+      }
+    ```
   - Além de adicionarmos o novo elemento ao bank-end, também usamos o conceito de Imutabilidade para atualizarmos a variável Estado com o novo elemento.
 
 * Requisição de Remoção de Recursos/repositórios
@@ -74,7 +74,7 @@ Esse desafio tem o intuíto de revisar os conceitos de Estado e Imutabilidade do
       setRepositories(newRepositories);
    }
   ```
- - Assim como na adição, temos que atualizar a variável Estado usando o conceito de imutabilidade de não alterar o mesmo espaço da memória e sim criar um novo, além disso usamos o método filter que verifica cada elemento de uma lista com a regra dada e retorna a lista de elementos que respeitam essa regra.
+   - Assim como na adição, temos que atualizar a variável Estado usando o conceito de imutabilidade de não alterar o mesmo espaço da memória e sim criar um novo, além disso usamos o método filter que verifica cada elemento de uma lista com a regra dada e retorna a lista de elementos que respeitam essa regra.
   
 ___
 ## :interrobang: Motivo
@@ -101,7 +101,7 @@ ___
 
   - Clonar o projeto:
     ```bash
-     git clone https://github.com/Aszurar/conceptsReactjsChallenge
+     git clone https://github.com/Aszurar/reactjsChallenge.git
     ```
   - É necessário a instalação do yarn de acordo com seu sistema operacional, para isso veja como no site do [Yarn](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)
   - Instalação das dependências:
