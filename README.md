@@ -26,7 +26,7 @@ Esse desafio tem o intuíto de revisar os conceitos de Estado e Imutabilidade do
 
 * Página Inicial:
  
-  <img src="https://i.imgur.com/P66DOns.png" width="800"> 
+  <img src="https://i.imgur.com/P66DOns.png" width="500"> 
 
 
   
