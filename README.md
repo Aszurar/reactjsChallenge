@@ -40,40 +40,40 @@ Esse desafio tem o intuíto de revisar os conceitos de Estado e Imutabilidade do
      });
    }, []);
 ```
- - Aqui temos a definição da variável Estado repositórios que é uma lista de objetos em que cada objeto seria um repositório e também definimos a função que atualiza essa variável Estado que é a setRepositories.
-  - Relembrando que a função useState retorna 2 ítens, o 1º é a variável Estado e o 2º é a função que a atualiza.
- - Também temos o uso do useEffect que é uma função que tem por objetivo executar determinada função quando algo acontecer, nesse caso, o useEffect executa a função de atualização da variável Estado com os dados do back-end assim que a página é carregada.
-  - Relembreando que no ReactJS não mostramos direto os dados do back-end na tela, primeiro nós atualizamos nossa variável Estado com os dados do back-end e com essa variável Estado nós mostramos os dados no front-end.
+  - Aqui temos a definição da variável Estado repositórios que é uma lista de objetos em que cada objeto seria um repositório e também definimos a função que atualiza essa variável Estado que é a setRepositories.
+   - Relembrando que a função useState retorna 2 ítens, o 1º é a variável Estado e o 2º é a função que a atualiza.
+  - Também temos o uso do useEffect que é uma função que tem por objetivo executar determinada função quando algo acontecer, nesse caso, o useEffect executa a função de atualização da variável Estado com os dados do back-end assim que a página é carregada.
+   - Relembreando que no ReactJS não mostramos direto os dados do back-end na tela, primeiro nós atualizamos nossa variável Estado com os dados do back-end e com essa variável Estado nós mostramos os dados no front-end.
 
  * Requisição de Adição de Recursos/repositórios
- ```js
-    async function handleAddRepository() {
-     const response = await api.post('repositories', { 
-       title: 'ignite - ReactJS',
-       url: 'https://github.com/Aszurar/nodejsChallenge',
-       techs: [
-         'Nodejs',
-         'html',
-         'css',
-         'Reacjs'
-       ],
-     });
+  ```js
+     async function handleAddRepository() {
+      const response = await api.post('repositories', { 
+        title: 'ignite - ReactJS',
+        url: 'https://github.com/Aszurar/nodejsChallenge',
+        techs: [
+          'Nodejs',
+          'html',
+          'css',
+          'Reacjs'
+        ],
+      });
 
-     const repository = response.data
+      const repository = response.data
 
-     setRepositories([...repositories, repository]);
-   }
- ```
- - Além de adicionarmos o novo elemento ao bank-end, também usamos o conceito de Imutabilidade para atualizarmos a variável Estado com o novo elemento.
+      setRepositories([...repositories, repository]);
+    }
+  ```
+  - Além de adicionarmos o novo elemento ao bank-end, também usamos o conceito de Imutabilidade para atualizarmos a variável Estado com o novo elemento.
 
 * Requisição de Remoção de Recursos/repositórios
- ```js
-  async function handleRemoveRepository(id) {
-     await api.delete(`repositories/${id}`);
-     const newRepositories = repositories.filter(repository => repository.id !== id);
-     setRepositories(newRepositories);
-  }
- ```
+  ```js
+   async function handleRemoveRepository(id) {
+      await api.delete(`repositories/${id}`);
+      const newRepositories = repositories.filter(repository => repository.id !== id);
+      setRepositories(newRepositories);
+   }
+  ```
  - Assim como na adição, temos que atualizar a variável Estado usando o conceito de imutabilidade de não alterar o mesmo espaço da memória e sim criar um novo, além disso usamos o método filter que verifica cada elemento de uma lista com a regra dada e retorna a lista de elementos que respeitam essa regra.
   
 ___
