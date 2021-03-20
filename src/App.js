@@ -17,13 +17,13 @@ function App() {
 
   async function handleAddRepository() {
     const response = await api.post('repositories', { 
-      title: 'ignite - ReactJS',
+      title: 'Ignite - ReactJS',
       url: 'https://github.com/Aszurar/nodejsChallenge',
       techs: [
         'Nodejs',
         'html',
         'css',
-        'Reacjs'
+        'reactjs'
       ],
     });
 
