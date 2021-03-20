@@ -110,9 +110,11 @@ ___
       yarn
     ```
  
- - Execução - Abra a pasta do projeto com alguma IDE(Vscode) ou simplesmente abra o terminal na pasta do projeto e execute o comando abaixo:
+ - Execução 
+   - É necessário que se tenha clonado, instalado todas dependências e executado a api node desenvolvida no projeto anterior que é da aplicação Node, esse é o nosso back-end para esse projeto: [NodeJs Challenge](https://github.com/Aszurar/nodejsChallenge)
+   - Abra a pasta do projeto com alguma IDE(Vscode) ou simplesmente abra o terminal na pasta do projeto e execute o comando abaixo:
     ```bash
-       yarn dev
+       yarn start
     ``` 
 ___
 Desenvolvido por :star2: Lucas de Lima Martins de Souza.
