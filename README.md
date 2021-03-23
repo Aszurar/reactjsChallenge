@@ -84,7 +84,7 @@ Esse projeto tem por objetivo por em prática os conceitos iniciais sobre Estado
 ___
 ## :seedling: Requisitos Mínimos
 
-Node.js, React e Typescript. 
+Node.js, Yarn(ou NPM), React e Typescript. 
 
 ___
 ## :rocket: Tecnologias Utilizadas 
